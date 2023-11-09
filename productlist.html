@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/c14073a443.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/home.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -15,19 +15,23 @@
   <body>
     <header>
       <nav>
-        <ul class='navBar'>
+        <ul class='navBar' id='navigation-bar'>
+          <a href="javascript:void(0);" class="navIcon" onclick="hamburgerMenu()">
+            <i class="fa-solid fa-bars fa-2xl"></i>
           <li class='navLogo'><a href="index.html">GenericApparel</a></li>
-          <li class='navTheme'><span onclick="modeSwitch()">
-            <i class="fa-solid fa-circle-half-stroke icon-4x"></i></span>
-          </li>      
           <li class='navItem'><a href="cart.html">Cart</a></li>   
           <li class='navItem'><a href="productlist.html">Products</a></li>   
           <li class='navItem'><a href="index.html">Home</a></li> 
-        </ul>
+          </a>
+        </ul> 
       </nav>
-      <h1><br><br>Products</h1> 
-      <p>The only thing better than the price is the quality</p>
     </header>
+
+    <section>
+      <div class="landingheadline-bg">
+        
+      </div>
+    </section>
 
     <footer>
       <p>&copy; 2023 GenericApparel</p>
