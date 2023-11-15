@@ -83,22 +83,39 @@ nav {
     display: flex;
     align-items: center;
     height: 45vh;
-    background-color: #d1d0d0;
+    background-color: #d1d0d0;    
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
 }
 
 .featured-bg img {
-    height: 90%;
-    width: 23%;
+    height: 410px;
+    width: 410px;
     padding: 10px
   }
 
 @media screen and (max-width: 800px) {
     .navItem a {display: none;}
-    .announcement-bg h3 {display: none;}
     .navBar a.navIcon {
-      display: block;
+        display: block;
+      }
+    .announcement-bg {
+        height:20vh;
     }
+    .announcement-bg h3 {display: none;}
+    .featured-bg {
+        display: flex;
+        align-items: center;
+        height: 23vh;
+        background-color: #d1d0d0;    
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .featured-bg img {
+        height: 200px;
+        width: 200px;
+        padding: 10px
+      }
   }
