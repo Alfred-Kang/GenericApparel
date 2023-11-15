@@ -79,18 +79,20 @@ nav {
     font-size: 4vw;
 }
 
-div.featured-bg {
-    height: 50vh;
+.featured-bg {
+    display: flex;
+    align-items: center;
+    height: 45vh;
     background-color: #d1d0d0;
-    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     white-space: nowrap;
-    padding: 20px;
 }
 
-div.featured-bg img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
+.featured-bg img {
+    height: 90%;
+    width: 23%;
+    padding: 10px
   }
 
 @media screen and (max-width: 800px) {
