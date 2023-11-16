@@ -22,9 +22,24 @@ And lastly, I wanted something to add filters, micro interactions, and potential
 ### Inspiration
 I searched up some big e-commerce sites such as [Uniqlo](https://www.uniqlo.com/), [Zara](https://www.zara.com/), and [Nike](https://www.nike.com/) as inspiration when designing the wireframe for GenericApparel, and implemented some of my favourite UI/UX features from each of them.
 
-## Design Process
-
 ## Features
+
+### Home Page
+- Headline (Biggest News)
+- Announcements (Discounts, Sales)
+- Featured Items (Most Popular Items)
+- Coming Soon Items
+
+### Product List Page
+- Products Filter (Size, Colour, Price, Type)
+- Products Overview
+
+### Product Preview
+- Item Selection (Size, Colour)
+- Item Description/Details (Material, Colour, Washing Instructions...)
+- Customer Reviews (1-5 Stars)
+
+## Design Process
 
 ## Technologies
 
