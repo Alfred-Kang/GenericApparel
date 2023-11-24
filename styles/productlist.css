@@ -36,7 +36,6 @@ nav {
 .navItem a {
     display: flex;
     color: white;
-    text-align: center;
     padding: 16px;
     text-decoration: none;
     font-weight: bold;
@@ -46,7 +45,6 @@ nav {
     font-family: 'Satisfy', cursive !important;
     display: block;
     color: white;
-    text-align: center;
     padding: 14px;
     text-decoration: none;
     font-weight: bold;
@@ -61,15 +59,71 @@ nav {
     padding: 15px;
   }
 
-.landingheadline-bg {
+.productlisttitlebg {
     display: flex;
     background-color: #d1d0d0;
-    height:105vh;
+    height: 30vw;
+    align-items: end;
+    justify-content: left;
 }
+
+.productlisttitle {
+    margin-left: 3vw;
+    margin-bottom: 3vh;
+    font-size: 5vw;
+}
+
+.filtersbg {
+    display: flex;
+    background-color: #e8e5e5;
+    height: 7vh;
+    justify-content: right;
+    align-items: center;
+}
+
+.filters {
+    font-size: 1.5vw;
+    margin-right: 3vw;
+}
+
+.row {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.column {
+    flex: 20%;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 410px;
+    width: 410px;
+    padding: 10px
+}
+
+.clothing-title {
+    margin-bottom: 8px;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+  
 
 @media screen and (max-width: 800px) {
     .navItem a {display: none;}
     .navBar a.navIcon {
       display: block;
+    }
+    .productlisttitle {
+        margin: auto;
+        font-size: 8vw;
+    }
+    .productlisttitlebg {
+        height: 50vw;
     }
   }
