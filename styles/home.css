@@ -96,9 +96,10 @@ nav {
 }
 
 .headline-bg h1{
+    font-family: 'Satisfy', cursive !important;
     color: #F5EDF0;
     position: absolute; 
-    top: 10vw;
+    top: 12vw;
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -108,7 +109,7 @@ nav {
 .headline-bg h3 {
     color: #F5EDF0;
     position: absolute; 
-    top: 27vw;
+    top: 29vw;
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -156,7 +157,7 @@ nav {
 .announcement-bg {
     display: flex;
     flex-direction: column;
-    height:33vh;
+    height:40vh;
     align-items: center;
     justify-content: center;
 }
@@ -176,12 +177,16 @@ nav {
     white-space: nowrap;
 }
 
+.featuretitle, .arrivaltitle {
+    margin-left: 2vw;
+    font-size: 2vw;
+}
+
 .featured-bg:before, .featured-bg:after {
 	content: "";
 	position: absolute;
 	height: 130px;
 	width: 150px;
-	z-index: 2;
 }
 
 .featured-bg:after {
@@ -195,8 +200,38 @@ nav {
 .featured-bg img {
     height: 24vw;
     width: 24vw;
-    padding: 10px;
+    padding: 5px;
   }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    background-color: #424C55;
+}
+
+.footerelements {
+    display: flex;
+    justify-content: center;
+}
+
+.footerelements a {
+    font-size: 1.2vw;
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
+    color: #F5EDF0;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.footerelements .logo {
+    font-family: 'Satisfy', cursive !important;
+}
+
+.copyright {
+    color: #F5EDF0;
+}
 
 /* ScrollBar */
 ::-webkit-scrollbar {
