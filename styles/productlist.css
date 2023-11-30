@@ -1,11 +1,12 @@
 html, body {
     font-family: Geneva, Verdana, Tahoma, sans-serif;
     margin: 0px;
-    background-color: #F7F7F7;
-    color: #393E46;
+    background-color: #D1CCDC;
+    color: #424C55;
     text-align: center;
 }
 
+/* NavBar */
 nav {
     display: flex;
     justify-content: center;
@@ -16,8 +17,7 @@ nav {
     position: fixed;
     top:0;
     width: 80vw;
-    background-color: #616161;
-    color: #F7F7F7;
+    background-color: #DB5A42;
     opacity: 0.8;
     list-style-type: none;
     padding: 0;
@@ -36,7 +36,7 @@ nav {
 
 .navItem a {
     display: flex;
-    color: white;
+    color: #F5EDF0;
     text-align: center;
     padding: 18px;
     text-decoration: none;
@@ -47,7 +47,7 @@ nav {
 .navLogo a {
     font-family: 'Satisfy', cursive !important;
     display: block;
-    color: white;
+    color: #F5EDF0;
     text-align: center;
     padding: 18px;
     text-decoration: none;
@@ -60,13 +60,14 @@ nav {
     display: none;
     right: 0;
     margin-right: 30px;
-    color: white;
+    color: #F5EDF0;
     padding: 15px;
   }
 
+/* Title */
 .productlisttitlebg {
     display: flex;
-    background-color: #d1d0d0;
+    background-color: #F5EDF0;
     height: 30vw;
     align-items: end;
     justify-content: left;
@@ -78,9 +79,10 @@ nav {
     font-size: 5vw;
 }
 
+/* Filters */
 .filtersbg {
     display: flex;
-    background-color: #e8e5e5;
+    background-color: #D1CCDC;
     height: 7vh;
     justify-content: right;
     align-items: center;
@@ -115,8 +117,28 @@ nav {
     font-size: 15px;
     font-weight: bolder;
 }
-  
 
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track bg */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+  }
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #DB5A42;
+  }
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 8px;
+    background: #e74e33;
+  }
+
+/* Media Queries */
 @media screen and (max-width: 920px) {
     .navLogo a {font-size: 20px;}
     .navItem a {display: none;}
