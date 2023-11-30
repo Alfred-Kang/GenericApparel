@@ -233,6 +233,153 @@ footer {
     color: #F5EDF0;
 }
 
+/* Contact Us Page */
+/* Contact */
+.contactbox {
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Left Flexbox(text) */
+.contacttext {
+    margin-left: 5vw;
+    width: 50%;
+}
+
+.contactbox h1 {
+    font-size: 4vw;
+}
+
+.contactbox h2 {
+    font-size: 1.5vw;
+}
+
+/* Right Flexbox(form) */
+.form {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-radius: 5px;
+  }
+
+/* Placeholder Text Color */
+::placeholder {
+    color: #F5EDF0;
+    opacity: 1; /* Firefox Browser Support */
+  }
+
+/* Form Label Color */
+form label{
+    color: #424C55;
+}
+
+/* Text Form Inputs*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #DB5A42;
+    border: 1px solid #D1CCDC;
+    color: #F5EDF0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+/* Submit Button */
+input[type=submit] {
+    width: 100%;
+    background-color: #DB5A42;
+    color: #F5EDF0;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #DB5A42;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+input[type=submit]:hover {
+    box-shadow: inset 350px 0 0 0 #57805f;
+  }
+
+/* Product List Page */
+/* Title */
+.productlisttitlebg {
+    display: flex;
+    background-color: #F5EDF0;
+    height: 30vw;
+    align-items: end;
+    justify-content: left;
+}
+
+.productlistbg img {
+    z-index: 0;
+    height: 30vw;
+    position: contents;
+    width: 100%;
+    height: 30vw;
+}
+
+.productlisttitle {
+    position: absolute;
+    margin-left: 3vw;
+    margin-bottom: 3vh;
+    font-size: 5vw;
+}
+
+/* Filters */
+.filtersbg {
+    display: flex;
+    background-color: #424C55;
+    height: 7vh;
+    justify-content: right;
+    align-items: center;
+}
+
+.filters {
+    display: flex;
+    font-size: 20px;
+    margin-right: 3vw;
+    padding: 12px;
+}
+.filters a {
+    text-decoration: none;
+    color: #F5EDF0;
+}
+.filters:hover{
+    background-color: rgba(189, 195, 199, 0.15);
+    border-radius: 10px;
+}
+
+.row {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.column {
+    flex: 20%;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 410px;
+    width: 410px;
+    padding: 10px
+}
+
+.clothing-title {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
 /* ScrollBar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -270,5 +417,16 @@ footer {
     .featured-bg img {
         height: 38vw;
         width: 38vw;
+    }
+    .filtersbg {
+        justify-content: center;
+        margin-right: 0;
+    }
+    .productlisttitle {
+        margin: auto;
+        font-size: 8vw;
+    }
+    .productlisttitlebg {
+        height: 50vw;
     }
   }
