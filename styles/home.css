@@ -84,7 +84,7 @@ nav {
 .featured-bg {
     display: flex;
     align-items: center;
-    height: 45vh;
+    height: 28vw;
     background-color: #d1d0d0;    
     overflow-x: auto;
     overflow-y: hidden;
@@ -92,12 +92,13 @@ nav {
 }
 
 .featured-bg img {
-    height: 410px;
-    width: 410px;
+    height: 24vw;
+    width: 24vw;
     padding: 10px
   }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 920px) {
+    .navLogo a {font-size: 20px;}
     .navItem a {display: none;}
     .navBar a.navIcon {
         display: block;
@@ -109,15 +110,14 @@ nav {
     .featured-bg {
         display: flex;
         align-items: center;
-        height: 23vh;
+        height: 45vw;
         background-color: #d1d0d0;    
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
     }
     .featured-bg img {
-        height: 200px;
-        width: 200px;
-        padding: 10px
-      }
+        height: 38vw;
+        width: 38vw;
+    }
   }
