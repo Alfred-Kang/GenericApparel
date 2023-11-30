@@ -1,9 +1,10 @@
 html, body {
     font-family: Geneva, Verdana, Tahoma, sans-serif;
     margin: 0px;
-    background-color: #D1CCDC;
+    background-color: #ebd6b6;
     color: #424C55;
     text-align: center;
+    overflow-x: hidden;
 }
 
 /* NavBar */
@@ -64,6 +65,13 @@ nav {
     padding: 15px;
 }
 
+/* navHover */
+.navItem:hover, .navLogo:hover, .navIcon:hover {
+    transition: 0.85s;
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+}
+
 /* Title */
 .carttitlebg {
     display: flex;
@@ -111,7 +119,7 @@ nav {
   }
 ::-webkit-scrollbar-thumb:hover {
     border-radius: 8px;
-    background: #e74e33;
+    background: #ac2c16;
   }
 
 /* Media Queries */

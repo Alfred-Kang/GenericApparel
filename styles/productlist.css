@@ -1,9 +1,10 @@
 html, body {
     font-family: Geneva, Verdana, Tahoma, sans-serif;
     margin: 0px;
-    background-color: #D1CCDC;
+    background-color: #ebd6b6;
     color: #424C55;
     text-align: center;
+    overflow-x: hidden;
 }
 
 /* NavBar */
@@ -64,6 +65,13 @@ nav {
     padding: 15px;
   }
 
+/* navHover */
+.navItem:hover, .navLogo:hover, .navIcon:hover {
+    transition: 0.85s;
+    background-color: rgba(0, 0, 0, 0.17);
+    border-radius: 10px;
+}
+
 /* Title */
 .productlisttitlebg {
     display: flex;
@@ -82,15 +90,25 @@ nav {
 /* Filters */
 .filtersbg {
     display: flex;
-    background-color: #D1CCDC;
+    background-color: #424C55;
     height: 7vh;
     justify-content: right;
     align-items: center;
 }
 
 .filters {
-    font-size: 1.5vw;
+    display: flex;
+    font-size: 20px;
     margin-right: 3vw;
+    padding: 12px;
+}
+.filters a {
+    text-decoration: none;
+    color: #F5EDF0;
+}
+.filters:hover{
+    background-color: rgba(189, 195, 199, 0.15);
+    border-radius: 10px;
 }
 
 .row {
@@ -135,13 +153,17 @@ nav {
   }
 ::-webkit-scrollbar-thumb:hover {
     border-radius: 8px;
-    background: #e74e33;
+    background: #ac2c16;
   }
 
 /* Media Queries */
 @media screen and (max-width: 920px) {
     .navLogo a {font-size: 20px;}
     .navItem a {display: none;}
+    .filtersbg {
+        justify-content: center;
+        margin-right: 0;
+    }
     .navBar a.navIcon {
       display: block;
     }
