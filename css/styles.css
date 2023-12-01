@@ -11,6 +11,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .navBar {
@@ -23,6 +24,10 @@ nav {
     padding: 0;
     border-radius: 15px;
     z-index: 2;
+}
+
+.navMenu {
+    display: none; 
 }
 
 .navLogo {
@@ -57,7 +62,14 @@ nav {
 }
 
 .navIcon {
+    z-index: 99;
     display: none;
+    color: #DB5A42;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    cursor: pointer;
 }
 
 /* navHover */
@@ -199,34 +211,76 @@ nav {
     padding: 5px;
   }
 
-footer {
+/* Product List Page */
+/* Title */
+.productlisttitlebg {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 10vw;
+    background-color: #ebd6b6;
+    height: 30vw;
+    align-items: end;
+    justify-content: left;
+}
+
+.productlisttitle {
+    margin-left: 3vw;
+    margin-bottom: 3vh;
+    font-size: 5vw;
+}
+
+/* Filters */
+.filtersbg {
+    display: flex;
     background-color: #424C55;
+    height: 7vh;
+    justify-content: right;
+    align-items: center;
 }
 
-.footerelements {
+.filters {
+    display: flex;
+    font-size: 20px;
+    margin-right: 3vw;
+    padding: 12px;
+}
+.filters a {
+    text-decoration: none;
+    color: #F5EDF0;
+}
+.filters:hover{
+    background-color: rgba(189, 195, 199, 0.15);
+    border-radius: 10px;
+}
+  
+.gallery {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+  
+.gallery img {
+    width: 350px;
+    display: block;
+    flex-basis: 20%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.footerelements a {
-    font-size: 1.2vw;
-    font-family: Geneva, Verdana, Tahoma, sans-serif;
-    color: #F5EDF0;
-    text-decoration: none;
-    padding: 15px;
-}
-
-.footerelements .logo {
-    font-family: 'Satisfy', cursive !important;
-}
-
-.copyright {
-    color: #F5EDF0;
+.clothing-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Contact Us Page */
@@ -302,78 +356,34 @@ input[type=submit]:hover {
     box-shadow: inset 350px 0 0 0 #57805f;
   }
 
-/* Product List Page */
-/* Title */
-.productlisttitlebg {
+footer {
     display: flex;
-    background-color: #F5EDF0;
-    height: 30vw;
-    align-items: end;
-    justify-content: left;
-}
-
-.productlistbg img {
-    z-index: 0;
-    height: 30vw;
-    position: contents;
-    width: 100%;
-    height: 30vw;
-}
-
-.productlisttitle {
-    position: absolute;
-    margin-left: 3vw;
-    margin-bottom: 3vh;
-    font-size: 5vw;
-}
-
-/* Filters */
-.filtersbg {
-    display: flex;
-    background-color: #424C55;
-    height: 7vh;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 10vw;
+    background-color: #424C55;
 }
 
-.filters {
+.footerelements {
     display: flex;
-    font-size: 20px;
-    margin-right: 3vw;
-    padding: 12px;
+    justify-content: center;
 }
-.filters a {
-    text-decoration: none;
+
+.footerelements a {
+    font-size: 1.2vw;
+    font-family: Geneva, Verdana, Tahoma, sans-serif;
     color: #F5EDF0;
-}
-.filters:hover{
-    background-color: rgba(189, 195, 199, 0.15);
-    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px;
 }
 
-.row {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-  
-.column {
-    flex: 20%;
-}
-  
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    height: 410px;
-    width: 410px;
-    padding: 10px
+.footerelements .logo {
+    font-family: 'Satisfy', cursive !important;
 }
 
-.clothing-title {
-    margin-bottom: 8px;
-    font-size: 15px;
-    font-weight: bolder;
+.copyright {
+    color: #F5EDF0;
 }
 
 /* ScrollBar */
@@ -397,37 +407,38 @@ input[type=submit]:hover {
   }
 
 .showNavMenu {
-        transform: translateY(0);
-    }
+    transform: translateY(0) !important;
+    display: block;
+}
 
 /* Media Queries */
 @media screen and (max-width: 920px) {
     .navMenu {
-        width: 100%;
-        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         transform: translateY(-100%);
         transition: transform 0.2s;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        list-style: none;
-        padding-top: 4rem;
-    }
-    .navIcon {
+        list-style: none;   
         position: fixed;
-        top: 1rem;
-        right: 1rem;
-        padding: 4px;
-        background: white;
-        cursor: pointer;
+        width: 100%;
+        height: 45vh;
+        background-color: #DB5A42;
+        list-style-type: none;
+        padding: 0;
+        border-radius: 0px;
+        z-index: 98;
     }
 
-    .navLogo a {font-size: 20px;}
-    .navItem a {display: none;}
-    .navBar a.navIcon {
-        display: block;
-      }
+    .navIcon {display: block;}
+    .navItem a{font-size: 4vw;}
+
+    .navBar {display: none;}
+
     .announcement-bg {
         height:20vh;
     }
