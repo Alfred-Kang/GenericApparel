@@ -43,14 +43,12 @@ I searched up some big e-commerce sites such as [Uniqlo](https://www.uniqlo.com/
 
 ### Features Left to Implement
 
-## Design Process
-
 ## Technologies
 - Hypertext Markup Language (HTML)
   - This project uses HTML to design the layout and format of the website
 
 - Cascading Style Sheets (CSS)
-  - This project uses CSS to style the website/HTML elements
+  - This project uses CSS to style the website /HTML elements
 
 - Javascript
   - This project uses Javascript to create interactive elements for the website
@@ -61,8 +59,8 @@ I searched up some big e-commerce sites such as [Uniqlo](https://www.uniqlo.com/
 - Adobe XD
   - This project uses Adobe XD to plan and design the wireframe for the website during the planning stage
 
-## Design
-[Wireframe (Adobe XD)](https://xd.adobe.com/view/13933579-7eef-434c-9168-156d16580a80-46c0/?fullscreen)
+## Design Process
+[Wireframe (Adobe XD)]()
 
 ### Target Audience
 Teenagers/Adults
@@ -92,18 +90,25 @@ Buy affordable aesthetic/minimalist clothing
     1. Ensure padding and margins of all navigation items and logo is vertically centered and appropriate amount of margin space is given
     2. Try to click all the navigation items to ensure that all links to other pages is working
     3. Try to shrink the width of the window down below 900px to verify that navigation items disappear and the hamburger menu appears
-    4. Try to click the hamburger menu to check that navigation items reappear in a column below
 2. Hamburger Menu (<920px)
+    1. Try to click the hamburger menu to check that navigation items reappear in a column below
+    2. Ensure that the links in from the hambuger menu nav bar works
 3. Varying/Phone Sceen Sizes/Aspect Ratios:
+    1. Try resizing the browser windows to many devices screen size and see if our website resizing accordingly
+    2. Run website on various physical devices to see if any unexpected issue pops up
 4. Different Browsers (Compatibility)
+    1. Try running the website on multiple browsers (Chrome, Edge, Firefox, Opera)
+    2. Note down which browsers will be unable to render the website properly and attempt to work around/fix that
 5. Contact Form:
+    1. Try submitting the form with missing compulsory inputs, and see if your request still goes through.
 6. Products List Gallery (Grid layout and hover)
+    1. Try hovering over all the grids and ensure that the labels are correct
 7. Animations and Transitions
+    1. Try and view all animations and ensure that they are all work well and consistant.
+    2, Ensure that animation/transitions will not take too much resources to run
 8. Featured Products Slideshow
-9. Scroll Bar
-10. Footer
-11. Github Repository
-12. Github Pages
+    1. Try scrolling through as much of the slideshow as much as possible.
+
 
 
 ## Credits

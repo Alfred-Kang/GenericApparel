@@ -54,7 +54,6 @@ nav {
     font-family: 'Satisfy', cursive !important;
     display: block;
     color: #F5EDF0;
-    text-align: center;
     padding: 18px;
     text-decoration: none;
     font-size: 1.5vw;
@@ -100,14 +99,14 @@ nav {
 
 /* Headline */
 .headline-bg {
-    background-color: rgb(66, 66, 66)
+    background-color: rgb(66, 66, 66);
 }
 
 .headline-bg h1{
     font-family: 'Satisfy', cursive !important;
     color: #F5EDF0;
     position: absolute; 
-    top: 12vw;
+    top: 20%;
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -117,7 +116,7 @@ nav {
 .headline-bg h3 {
     color: #F5EDF0;
     position: absolute; 
-    top: 29vw;
+    top: 48%;
     width: 100%;
     text-align: center;
     z-index: 1;
@@ -171,7 +170,12 @@ nav {
 }
 
 .announcement-bg h1 {
-    font-size: 4vw;
+    color: #DB5A42;
+    font-size: 3.5vw;
+}
+
+.announcement-bg h3 {
+    color: #DB5A42;
 }
 
 /* Featured Products */
@@ -185,7 +189,7 @@ nav {
     white-space: nowrap;
 }
 
-.featuretitle, .arrivaltitle {
+.featuretitle {
     margin-left: 2vw;
     font-size: 2vw;
 }
@@ -203,6 +207,10 @@ nav {
 
 .featured-bg .featuredtrack{
     animation: scroll 150s 0.5s linear infinite;
+}
+
+.featuredtrack img:hover {
+    background-color: #DB5A42;
 }
 
 .featured-bg img {
@@ -250,6 +258,15 @@ nav {
     background-color: rgba(189, 195, 199, 0.15);
     border-radius: 10px;
 }
+
+.box {
+    position: relative;
+    cursor: pointer;
+}
+
+.box:hover .clothing-title {
+    transform: scale(1);
+}
   
 .gallery {
     display: flex;
@@ -277,10 +294,13 @@ nav {
     transition: all 0.2s 0.1s ease-in-out;
     color: #fff;
     border-radius: 5px;
-    /* center overlay text */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.clothing-title span {
+    margin: 10px;
 }
 
 /* Contact Us Page */
@@ -368,6 +388,7 @@ footer {
 .footerelements {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .footerelements a {
@@ -433,15 +454,40 @@ footer {
         border-radius: 0px;
         z-index: 98;
     }
-
     .navIcon {display: block;}
     .navItem a{font-size: 4vw;}
-
     .navBar {display: none;}
 
-    .announcement-bg {
-        height:20vh;
+    .contacttext {
+        margin-left: 0;
+        width: 80%;
     }
+    
+    .contactbox h1 {
+        font-size: 8vw;
+    }
+    
+    .contactbox h2 {
+        font-size: 4vw;
+    }
+    .contactbox {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .form {
+        width: 80%;
+        padding: 5vw;}
+
+    .headline-bg h1{top: 30vw;}
+    .headline-bg h3{top: 45vw;}
+
+    .announcement-bg {
+        height:30h;
+        display: flex;
+        text-align: center;
+    }
+    .announcement-bg h1 {font-size: 10vw;}
     .announcement-bg h3 {display: none;}
     .featured-bg {
         height: 45vw;
@@ -449,6 +495,11 @@ footer {
     .featured-bg img {
         height: 38vw;
         width: 38vw;
+    }
+    .featuretitle {
+        margin-left: 0;
+        text-align: center;
+        font-size: 8vw;
     }
     .filtersbg {
         justify-content: center;
@@ -460,5 +511,19 @@ footer {
     }
     .productlisttitlebg {
         height: 50vw;
+    }
+    .topcontainer img, .bottomcontainer img {
+        height: 45vw;
+        width: 45vw;
+      }
+    
+    footer {
+        height: 58vw;
+    }
+    .footerelements {
+        flex-direction: column;
+    }
+    .footerelements a{
+        font-size: 2.7vw;
     }
   }

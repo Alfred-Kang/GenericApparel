@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navIcon = document.getElementsByClassName("navIcon")[0]
 
   navIcon.addEventListener("pointerdown", () => {
-    if (navIcon.style.color === "#ebd6b6") {
+    if (navIcon.style.color === "rgb(235, 214, 182)") {
       navIcon.style.color = "#DB5A42"
     } else {
       navIcon.style.color = "#ebd6b6"
