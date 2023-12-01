@@ -60,7 +60,7 @@ I searched up some big e-commerce sites such as [Uniqlo](https://www.uniqlo.com/
   - This project uses Adobe XD to plan and design the wireframe for the website during the planning stage
 
 ## Design Process
-[Wireframe (Adobe XD)]()
+[Wireframe (Adobe XD)](https://xd.adobe.com/view/a1b98de2-9eb3-42bd-ba12-53efef337c69-f4ea/?fullscreen)
 
 ### Target Audience
 Teenagers/Adults
