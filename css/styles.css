@@ -9,6 +9,7 @@ html, body {
 /* NavBar */
 nav {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -55,13 +56,8 @@ nav {
     font-weight: bold;
 }
 
-.navBar .navIcon {
-    position: absolute;
+.navIcon {
     display: none;
-    right: 0;
-    margin-right: 30px;
-    color: #F5EDF0;
-    padding: 15px;
 }
 
 /* navHover */
@@ -400,8 +396,33 @@ input[type=submit]:hover {
     background: #ac2c16;
   }
 
+.showNavMenu {
+        transform: translateY(0);
+    }
+
 /* Media Queries */
 @media screen and (max-width: 920px) {
+    .navMenu {
+        width: 100%;
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        list-style: none;
+        padding-top: 4rem;
+    }
+    .navIcon {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        background: white;
+        cursor: pointer;
+    }
+
     .navLogo a {font-size: 20px;}
     .navItem a {display: none;}
     .navBar a.navIcon {

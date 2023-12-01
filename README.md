@@ -24,27 +24,96 @@ I searched up some big e-commerce sites such as [Uniqlo](https://www.uniqlo.com/
 
 ## Features
 
-### Home Page
+### Existing Features
+
+#### Home Page
 - Headline (Biggest News)
 - Announcements (Discounts, Sales)
 - Featured Items (Most Popular Items)
 - Coming Soon Items
 
-### Product List Page
+#### Product List Page
 - Products Filter (Size, Colour, Price, Type)
 - Products Overview
 
-### Product Preview
-- Item Selection (Size, Colour)
-- Item Description/Details (Material, Colour, Washing Instructions...)
-- Customer Reviews (1-5 Stars)
+#### Contact Us Page
+- Text input fields for name, email, message
+- Privacy Policy Checkbox (fake)
+- Form Submission
+
+### Features Left to Implement
 
 ## Design Process
 
 ## Technologies
+- Hypertext Markup Language (HTML)
+  - This project uses HTML to design the layout and format of the website
+
+- Cascading Style Sheets (CSS)
+  - This project uses CSS to style the website/HTML elements
+
+- Javascript
+  - This project uses Javascript to create interactive elements for the website
+
+- Visual Studio Code
+  - This project uses Visual Studio Code as the main integrated development environment (IDE)
+
+- Adobe XD
+  - This project uses Adobe XD to plan and design the wireframe for the website during the planning stage
 
 ## Design
+[Wireframe (Adobe XD)](https://xd.adobe.com/view/13933579-7eef-434c-9168-156d16580a80-46c0/?fullscreen)
+
+### Target Audience
+Teenagers/Adults
+
+#### Objective
+Buy affordable aesthetic/minimalist clothing
+
+#### Why GenericApparel?
+- Lowest prices guarenteed!
+- Wide range of colours to select from
+- Easy to use website interface
+- Responsive and friendly email support team
+- Free shipping for orders above $50
+
+### User Stories
+- As a teenager, I want to buy aesthetic looking clothes, so I can look and feel good outdoors
+
+- As a teenager, I want to buy single-coloured clothing so that it is easy to pair to other articles of clothing
+
+- As a student, I want to buy good quality clothing at a affordable price, so that I can buy long-lasting clothing without the high price tag
+
+- As a young adult, I want to buy simple and generic clothes that feel good so that I do not stand out in public
 
 ## Testing
+### Tests
+1. Navigation Bar:
+    1. Ensure padding and margins of all navigation items and logo is vertically centered and appropriate amount of margin space is given
+    2. Try to click all the navigation items to ensure that all links to other pages is working
+    3. Try to shrink the width of the window down below 900px to verify that navigation items disappear and the hamburger menu appears
+    4. Try to click the hamburger menu to check that navigation items reappear in a column below
+2. Hamburger Menu (<920px)
+3. Varying/Phone Sceen Sizes/Aspect Ratios:
+4. Different Browsers (Compatibility)
+5. Contact Form:
+6. Products List Gallery (Grid layout and hover)
+7. Animations and Transitions
+8. Featured Products Slideshow
+9. Scroll Bar
+10. Footer
+11. Github Repository
+12. Github Pages
+
 
 ## Credits
+### Content/Media
+- All product and model images were obtained from [Uniqlo](https://www.uniqlo.com/)
+- All product titles were obtained from [Uniqlo](https://www.uniqlo.com/)
+
+### Acknoledgements
+- I received inspiration for this project from [Uniqlo](https://www.uniqlo.com/), [Nike](https://www.nike.com/), and [Etsy](https://www.etsy.com/).
+
+### Fonts/Typography
+- Favicon and Logo: [Satisfy](https://fonts.google.com/specimen/Satisfy)
+- Text: Geneva, Verdana, Tahoma, sans-serif
